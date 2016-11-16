@@ -1,0 +1,326 @@
+@import url(reset.css);
+@import url(ramka.css); 
+
+html{
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;   
+    color: #48504e;
+    background:#ffc107 url("assets/tlo.jpg")fixed no-repeat;
+	background-size: contain;
+}
+
+
+.grey {
+	color: #48504e;
+}
+
+
+.lightgrey {
+	color: #d4d4d3;
+}
+
+.orange {
+	color: #ffc107;
+}
+
+h1 {
+	font-size: 3.7rem;
+    background-color: rgba(255,255,255,.9); 
+    padding: 3.5rem;
+    margin: 4.0rem;
+    display: inline-block;
+    border-top-left-radius: 2rem;
+    }
+
+h2{
+	font-size: 2.7rem;
+	color: #fff;
+}
+h3{
+	font-size: 3.1rem;
+}
+
+h3,h2{ 
+   color: #fff;
+   background-color: #48504e;
+   display: inline-block;
+   padding: 1.5rem;
+}
+
+h4 {
+	font-size: 2rem;
+	padding: 2rem 1rem;
+}
+
+p{ 
+	font-size: 1.8rem; 
+	line-height: 1.55;
+}
+
+footer p {
+	font-size: 1.4rem;
+	color: #d4d4d3;
+}
+
+footer {
+	background-color: #fff;
+	padding: 1rem;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 6;
+}
+
+
+strong {
+	font-weight: bold;
+	}
+
+em {
+	background-color: rgba(255,255,255,.8);
+}
+
+.summary {
+	font-size: 2.4rem;
+	font-style: italic;
+		  
+}
+.dot {
+	width: 1rem;
+	height: 1rem;
+	background-color: #48504e;
+	border-radius: 1rem;
+	margin: 3rem auto;
+}
+.striketext{
+	text-decoration:line-through;
+
+}
+
+.button-more{
+	display: inline-block;
+	border: 2px dashed #000;
+	text-decoration: none;
+	font-size: 3rem;
+	padding: 1rem 1.5rem;
+	text-decoration: none;
+	position: absolute;
+	right: 0;
+}
+
+
+ul {
+	font-size: 2.3rem; 
+	line-height: 1.75;
+}
+
+
+header{
+	display: none;
+	background: #48504e;
+	color: #fff;
+	height: 30rem;
+	padding: 10rem;
+}
+
+.menu{
+	background: url(assets/menu.svg) center no-repeat;
+	padding: 1rem
+	margin: 1rem;
+	height: 3.2rem;
+	width: 3.2rem;
+	position: fixed;
+	right: 0;
+	z-index: 9999;
+	background-color: #fff;
+}
+
+.text{
+	padding-top: 4rem; 
+    -webkit-column-count: 2;
+    column-count: 2;
+   -moz-column-count: 2;
+}
+
+section {
+	width: 55%;
+	min-width: 600px;
+	max-width: 850px;
+	position: absolute;
+	right: 5%;
+}
+
+article {
+
+	margin-bottom:6rem;
+}
+
+hgroup{
+	margin-left: -25%;
+	position: relative;
+	display: inline-block;
+}
+h3{
+	position: absolute;
+	right: 0;
+	bottom: 10.6%;
+
+}
+
+figure{
+	margin-left: -25%;
+	float: left; 
+	margin-top: 20%;
+}
+
+
+
+nav {
+	float: right;
+	margin-top: -5rem;
+}
+
+nav li {
+	text-align: right;
+	background: url(assets/strzalka.svg) right no-repeat;
+	padding-right: 4rem;
+	line-height: 1.5rem;
+	margin: 3rem;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+nav a:link {
+	color: #fff;
+}
+
+nav a:visited {
+	color: #fff;
+}
+
+form {
+	float: left;
+	width: 35rem;
+}
+
+input,textarea {
+	width: 35rem;
+	background: none;
+	border: 2px #d4d4d3 solid;
+	margin: .5rem;
+	padding: 1rem;
+	color: #fff;
+	font-size: 1.7rem;
+}
+
+button {
+	background: #ffc107;
+	border: none;
+	padding: 2rem 6rem;
+	font-size: 1.5rem;
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+	-webkit-cursor: pointer;
+	-moz-cursor: pointer; 
+	margin-top: -1.5rem;
+	margin-right: -3rem;
+}
+
+@media all and (max-width: 1920px) {
+	section {
+		width: 45%;
+	}
+}
+
+@media all and (max-width: 1280px) {
+	html{
+
+		background: #ffc107;
+	}
+
+section{
+
+	width: 75%;
+}
+
+ .bg{
+ 	background: url(assets/bg.jpg) fixed no-repeat;
+ 	height: 300px;
+ }
+
+
+
+nav li {
+	
+	background: none;
+
+
+}
+
+
+
+}
+
+@media all and (max-width: 768px){
+
+hgroup{
+	margin-left: 0;
+}
+
+figure{
+	display: none;
+}
+
+section{
+width: 90%;
+min-width: 250px;
+right: 5%;
+}
+
+.text {
+-webkit-column-count: 1;
+		   -moz-column-count: 1;
+		        column-count: 1;
+}
+
+.bg {
+ 	background:none;
+ }
+
+header{
+	padding: 2rem;
+	color: #fff;
+}
+
+h4{
+	padding: 1rem;
+}
+
+nav{
+	margin-top: 0rem;
+}
+
+nav li {
+	background: none;
+}
+
+nav a:link {
+	color: #000;
+}
+
+nav a:visited {
+	color: #000;
+}
+
+
+form{
+	width: 25rem;
+	margin: 0;
+}
+
+}
+
+
